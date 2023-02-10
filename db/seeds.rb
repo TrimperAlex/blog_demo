@@ -10,5 +10,5 @@
 User.create(email: "alex@peanutbutter.com", password: "test123", password_confirmation: "test123")
 
 10.times do |x|
-  Post.create(title: "Title #{x}", body: "Body #{x} words")
+  Post.create(title: "Title #{x}", body: "Body #{x} words", user_id: User.first.id)
 end
